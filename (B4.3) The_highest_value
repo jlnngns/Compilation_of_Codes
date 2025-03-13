@@ -7,3 +7,19 @@ def get_numbers():
         except ValueError:
             break
     return numbers
+
+def find_highest(numbers):
+    if numbers:
+        return max(numbers)
+    return None
+
+def main():
+    numbers = get_numbers()
+    highest = find_highest(numbers)
+    
+    if highest is not None:
+        print("\nHighest number:", highest)
+    else:
+        print("\nNo valid numbers entered.")
+
+main()
