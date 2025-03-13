@@ -1,7 +1,7 @@
 def get_numbers():
     numbers = []
     for i in range(10):
-        numbers.append(int(input(f"Enter number {i+1}: ")))
+        numbers.append(int(input(f"Enter number {i + 1}: ")))
     return numbers
 
 def find_unique_numbers(numbers):
@@ -10,3 +10,10 @@ def find_unique_numbers(numbers):
         if numbers.count(num) == 1:
             unique_numbers.append(num)
     return unique_numbers
+
+def main():
+    numbers = get_numbers()
+    unique_numbers = find_unique_numbers(numbers)
+    print("\nNumbers without duplicates:", unique_numbers)
+
+main()
