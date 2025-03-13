@@ -5,3 +5,8 @@ second_number = int(input("Enter the second number: "))
 # Determine the start and end points
 start = min(first_number, second_number)    # Get the smaller number
 end = max(first_number, second_number)     # Get the larger number
+
+# Print numbers between the two numbers
+print(f"Numbers between {first_number} and {second_number}:")
+for value in range(start + 1, end):    # Exclude the input numbers themselves
+    print(value)
