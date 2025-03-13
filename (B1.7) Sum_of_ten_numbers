@@ -1,5 +1,5 @@
 def main():
-    total = 0    # Initialize sum
+    summation = 0    # Initialize sum
 
     for i in range(10):
       num = int(input(f"Enter number {i + 1}: "))    # Get user input
