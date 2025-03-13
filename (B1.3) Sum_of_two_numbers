@@ -1,7 +1,7 @@
 # Ask the user to input two numbers
-num1 = int(input("Enter the first number: "))
-num2 = int(input("Enter the second number: "))
+first_number = int(input("Enter the first number: "))
+second_number = int(input("Enter the second number: "))
 
 # Calculate and print the sum
-sum_result = num1 + num2
+sum_result = first_number + second_number
 print("The sum of the two numbers is:", sum_result)
