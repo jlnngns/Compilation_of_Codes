@@ -1,1 +1,9 @@
+# Initialize a counter for even numbers
+even_count = 0
+
+# Ask the user to input 10 numbers
+for i range(10):
+   entered_value = int(input(f"Enter number {i + 1}: "))    # Convert input to integer
+       if entered_value % 2 == 0:     # Check if the number is even
+           even_count += 1
 
