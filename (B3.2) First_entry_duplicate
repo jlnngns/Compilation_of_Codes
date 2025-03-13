@@ -4,3 +4,12 @@ def get_numbers():
         num = int(input(f"Enter number {i + 1}: "))
         numbers.append(num)
     return numbers
+
+def remove_duplicates(numbers):
+    seen = set()
+    unique_numbers = []
+    for num in numbers:
+        if num not in seen:
+            unique_numbers.append(num)
+            seen.add(num)
+    return unique_numbers
