@@ -4,3 +4,9 @@ def get_numbers():
         numbers.append(int(input(f"Enter number {i+1}: ")))
     return numbers
 
+def find_unique_numbers(numbers):
+    unique_numbers = []
+    for num in numbers:
+        if numbers.count(num) == 1:
+            unique_numbers.append(num)
+    return unique_numbers
