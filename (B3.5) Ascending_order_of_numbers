@@ -6,3 +6,12 @@ while True:
     if not num.isdigit():  # Stop when input is not a valid number
         print("Invalid input. Exiting...")
         break
+
+    numbers.append(int(num))  # Convert input to an integer and store it
+
+# Sort and display the numbers if the list is not empty
+if numbers:
+    numbers.sort()  # Sort the list in ascending order
+    print("Numbers from lowest to highest:", numbers)
+else:
+    print("No valid numbers were entered.")
