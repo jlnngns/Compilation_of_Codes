@@ -1,0 +1,6 @@
+def get_numbers():
+    numbers = []
+    for i in range(10):
+        numbers.append(int(input(f"Enter number {i+1}: ")))
+    return numbers
+
