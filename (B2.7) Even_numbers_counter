@@ -7,3 +7,5 @@ for i range(10):
        if entered_value % 2 == 0:     # Check if the number is even
            even_count += 1
 
+# Print the count of even numbers 
+print(f"There are {even_count} even numbers.")
