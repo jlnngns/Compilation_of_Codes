@@ -1,0 +1,8 @@
+numbers = []  # List to store the numbers
+
+while True:
+    num = input("Enter a number: ")
+
+    if not num.isdigit():  # Stop when input is not a valid number
+        print("Invalid input. Exiting...")
+        break
