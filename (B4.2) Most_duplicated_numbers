@@ -7,3 +7,29 @@ def get_numbers():
         except ValueError:
             break
     return numbers
+
+def find_most_frequent(numbers):
+    if not numbers:
+        return None, 0  # No valid numbers entered
+
+    most_frequent = None
+    max_count = 0
+
+    for num in numbers:
+        count = numbers.count(num)
+        if count > max_count:
+            most_frequent = num
+            max_count = count
+
+    return most_frequent, max_count
+
+def main():
+    numbers = get_numbers()
+    most_frequent, count = find_most_frequent(numbers)
+    
+    if most_frequent is not None and count > 1:
+        print(f"\nNumber with the most duplicates: {most_frequent} (appeared {count} times)")
+    else:
+        print("\nNo duplicates found.")
+
+main()
