@@ -7,3 +7,19 @@ def get_numbers():
         except ValueError:
             break
     return numbers
+
+def calculate_average(numbers):
+    if numbers:
+        return sum(numbers) / len(numbers)
+    return None
+
+def main():
+    numbers = get_numbers()
+    average = calculate_average(numbers)
+    
+    if average is not None:
+        print(f"\nAverage: {average:.2f}")
+    else:
+        print("\nNo valid numbers entered.")
+
+main()
