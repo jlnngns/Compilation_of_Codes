@@ -2,3 +2,9 @@
 base = int(input("Enter the first number: "))
 remainder = int(input("Enter the second number: "))
 
+# Print and calculate the remainder
+if remainder != 0:
+   result = base % remainder
+   print(f"The remainder when {base} is divided by {remainder} is {result}")
+else: 
+   print("Error! Division by zero is not allowed.")
