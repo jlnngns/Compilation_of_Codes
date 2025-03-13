@@ -7,3 +7,9 @@ while True:
         print("Invalid input. Exiting the program....")
         break
 
+    value = int(value)    # Convert input to an integer
+
+    if lowest is None or value < lowest:
+        lowest = value    # Update the lowest number
+
+print(f"Lowest number entered: {lowest}" if lowest is not None else "No valid numbers were entered.")
