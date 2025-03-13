@@ -1,3 +1,7 @@
 # Initialize the starting number
 value = 1   # Start from the first odd number
 
+# Use a while loop to print numbers up to 100
+while value <= 100:
+    print(value)
+    value += 2   # Increment by 2 to get the next odd number
