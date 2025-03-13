@@ -4,7 +4,7 @@ divisor = float(input("Enter the second number: "))
 
 # Check if the divisor is not zero to avoid division error
 if divisor != 0:
-   quotient_result = num1 / num2
+   quotient_result = dividend / divisor
    print("The quotient of the two numbers is:", quotient_result)
 else:
    print("Error! Division by zero is not allowed")
