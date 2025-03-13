@@ -1,3 +1,6 @@
 def main():
     total = 0    # Initialize sum
-    count = 0    # Counter to track input count
+
+    for i in range(10):
+      # Get user input
+      num = int(input(f"Enter number {i + 1}: ")) 
