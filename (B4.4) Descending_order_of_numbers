@@ -8,3 +8,17 @@ def get_numbers():
             break
     return numbers
 
+def sort_numbers_desc(numbers):
+    numbers.sort(reverse=True)
+    return numbers
+
+def main():
+    numbers = get_numbers()
+    sorted_numbers = sort_numbers_desc(numbers)
+    
+    if sorted_numbers:
+        print("\nNumbers in descending order:", sorted_numbers)
+    else:
+        print("\nNo valid numbers entered.")
+
+main()
