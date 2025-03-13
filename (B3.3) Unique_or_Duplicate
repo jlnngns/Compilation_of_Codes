@@ -1,0 +1,12 @@
+while True:
+    num = input("Enter a number (or any non-number to stop): ")
+    
+    if not num.isdigit():   # Stop when input is not valid number
+        print("Invalid input. Exiting the program....")
+        break
+    
+            
+    if len(num) == len(set(num)):
+        print("Unique")
+    else:
+        print("Duplicate")
