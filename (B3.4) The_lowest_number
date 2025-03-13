@@ -1,0 +1,9 @@
+lowest = None   # Variable to store the lowest number
+
+while True:
+    value = input("Enter a number: ")
+
+    if not value.isdigit():    # Stop when input is not a valid number
+        print("Invalid input. Exiting the program....")
+        break
+
