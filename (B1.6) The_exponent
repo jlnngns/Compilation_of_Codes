@@ -1,7 +1,7 @@
 # Ask the user to input two numbers
-num1 = int(input("Enter the first number: "))
-num2 = int(input("Enter the second number: "))
+base = int(input("Enter the first number: "))
+exponent = int(input("Enter the second number: "))
 
 # Calculate and print the result
-exponent_result = num1 ** num2
-print("The result of", num1, "raised to the power of", num2, "is:", exponent_result)
+exponent_result = base ** exponent
+print("The result of", base, "raised to the power of", exponent, "is:", exponent_result)
