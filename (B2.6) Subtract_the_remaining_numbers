@@ -10,3 +10,5 @@ result = numbers[0]    # Start with the first number
 for value in numbers[1:]:    # Subtract the remaining numbers
    result -= value
 
+# Print the result
+print(f"The result of {numbers[0]} minus all the remaining numbers is:", result)
