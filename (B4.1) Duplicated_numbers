@@ -11,3 +11,14 @@ def find_duplicates(numbers):
         if numbers.count(num) > 1 and num not in duplicates:
             duplicates.append(num)
     return duplicates
+
+def main():
+    numbers = get_numbers()
+    duplicate_numbers = find_duplicates(numbers)
+    
+    if duplicate_numbers:
+        print("\nNumbers with duplicates:", duplicate_numbers)
+    else:
+        print("\nNo duplicate numbers found.")
+
+main()
